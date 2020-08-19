@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://servicios.ver.ucc.mx/procesar.php" method="get">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre</label><br>
+            <input type="text" id="nombre" name="nombre" required placeholder="nombre"><br>
+            <label for="correo">Email</label><br>
+            <input type="email" name="email" id="correo" required placeholder="e-mail"><br>
+            <label for="contraseña">Contraseña</label><br>
+            <input type="password" name="password" id="contraseña" required placeholder="contraseña"><br>
+            <input type="radio" name="sexo" id="Hombre" value="hombre" checked><label for="Hombre">Hombre</label>
+            <input type="radio" name="sexo" id="Mujer" value="mujer"><label for="Mujer">Mujer</label>
+        </fieldset>
+        <fieldset>
+            <legend>Servicio de noticias</legend>
+            <input type="checkbox" name="noticias[]" id="politica" value="Noticias de política"><label for="politica">Noticias de Politica</label><br>
+            <input type="checkbox" name="noticias[]" id="espectaculos" value="Noticias de espectáculos"><label for="espectaculos">Noticias de Espectaculos</label><br>
+            <input type="checkbox" name="noticias[]" id="tecnologia" value="Noticias de tecnología"><label for="tecnologia">Noticias de Tecnologia</label><br>
+            <label for="entrega">Metodo de entrega</label><br>
+            <select name="entrega" id="entrega">
+                <option value="Desde el portal">Desde el portal</option>
+                <option value="Enviar a mi e-mail">Enviar a mi email</option>
+            </select><br>
+            <label for="observaciones">Observaciones</label><br>
+            <textarea id="observaciones" name="observaciones" rows="5" cols="30"></textarea>
+        </fieldset>
+        <br><input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
